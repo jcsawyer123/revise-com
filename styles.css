@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5{
+  font-weight: bold;
+}
+
+.container{
+  width: 100%;
+}
+
 .jumbotron{
   color: #fff;
   background-color: #464646;
@@ -5,6 +13,13 @@
 
 .jumbotron button{
   color: black;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
+#data{
+  background-color: #fce2ba;
+  margin-bottom: 10px;
 }
 
 #dataTransmission button{
@@ -12,11 +27,28 @@
   background-color: #f39c12;
 }
 
+#dataTransmission button.active{
+  background-color: #f9cb82;
+}
+
+#inter{
+  background-color: #cae4f6;
+
+}
+
 #internet button{
   border: 0;
   background-color: #3498db;
 }
 
+#internet button.active{
+  border: 0;
+  background-color: #98cbed;
+}
+
+.panel{
+  margin: 10px;
+}
 .panel-col{
     display:none;
 }
@@ -26,8 +58,12 @@
 
 }
 .panel-data > .panel-heading{
-  color: #fff;
+  color: black;
   background-color: #f39c12;
+}
+
+.panel-data > .panel-body{
+  background-color: #fce3bc;
 }
 
 .panel-internet{
@@ -35,6 +71,10 @@
 
 }
 .panel-internet > .panel-heading{
-  color: #fff;
+  color: black;
   background-color: #3498db;
+}
+
+.panel-internet > .panel-body{
+  background-color: #cce5f6;
 }
