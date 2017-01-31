@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <!-- Linking the stylesheets to the webpage-->
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="styles.css">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Optional Bootstrap Theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css">
 
   <title>Revision</title>
 </head>
 <body>
+  <div class="container">
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Computing Revision</h1>
-    <div class="btns" id="dataTransmission">
-      <h2>Data Transmission</h2>
-      <button id="b-con">Characteristics</button>
-      <button id="b-hardware">Hardware</button>
-      <button id="b-topology">Topology</button>
-      <button id="b-protocols">Protocols</button>
-      <button id="b-extent">Extent</button>
-      <button id="b-networks">Networks</button>
+    <div class="jumbotron">
+      <div id="title">
+        <h1>Computing Revision</h1>
+      </div>
+      <div class="btns" id="dataTransmission">
+        <h2>Data Transmission</h2>
+        <button id="b-con">Characteristics</button>
+        <button id="b-hardware">Hardware</button>
+        <button id="b-topology">Topology</button>
+        <button id="b-protocols">Protocols</button>
+        <button id="b-extent">Extent</button>
+        <button id="b-networks">Networks</button>
+      </div>
+      <div class="btns" id="internet">
+        <h2>The Internet</h2>
+        <button id="b-uses">Uses</button>
+        <button id="b-history">History</button>
+        <button id="b-web">The Web</button>
+        <button id="b-websites">Websites</button>
+      </div>
     </div>
-    <div class="btns" id="internet">
-      <h2>The Internet</h2>
-      <button id="btn5">#btn5</button>
-      <button id="btn6">#btn6</button>
-      <button id="btn7">#btn7</button>
-      <button id="btn8">#btn8</button>
-      <button id="bertha">#bertha</button>
-    </div>
-  </div>
-
 
   <!-- These are panels that are using bootstrap#
 If you dont know what that is look at the previous
@@ -44,7 +45,7 @@ examples in HTML,CSS,JS-->
     <div class="row">
 
       <div class="col-xs-4 panel-col" id="con">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Characteristics of Networks
             </div>
@@ -54,7 +55,7 @@ examples in HTML,CSS,JS-->
       </div>
 
       <div class="col-xs-4 panel-col" id="hardware">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Hardware
             </div>
@@ -64,7 +65,7 @@ examples in HTML,CSS,JS-->
       </div>
 
       <div class="col-xs-4 panel-col" id="topology">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Topology
             </div>
@@ -74,7 +75,7 @@ examples in HTML,CSS,JS-->
       </div>
 
       <div class="col-xs-4 panel-col" id="protocols">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Protocols
             </div>
@@ -84,7 +85,7 @@ examples in HTML,CSS,JS-->
       </div>
 
       <div class="col-xs-4 panel-col" id="extent">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Extent
             </div>
@@ -94,7 +95,7 @@ examples in HTML,CSS,JS-->
       </div>
 
       <div class="col-xs-4 panel-col" id="networks">
-        <div class="panel panel-danger">
+        <div class="panel panel-data">
           <div class="panel-heading">
             Networks
             </div>
@@ -104,7 +105,56 @@ examples in HTML,CSS,JS-->
       </div>
 
     </div> <!-- Row -->
-  </div> <!-- Panels -->
+  </div> <!-- Panels - Data -->
+
+  <!-- The Internet -->
+
+  <div class="panels" id="data">
+    <div class="row">
+
+      <div class="col-xs-4 panel-col" id="uses">
+        <div class="panel panel-internet">
+          <div class="panel-heading">
+            Uses
+            </div>
+            <div class="panel-body"> content
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 panel-col" id="history">
+        <div class="panel panel-internet">
+          <div class="panel-heading">
+            History
+            </div>
+            <div class="panel-body"> content
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 panel-col" id="web">
+        <div class="panel panel-internet">
+          <div class="panel-heading">
+            The Web
+            </div>
+            <div class="panel-body"> content
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 panel-col" id="websites">
+        <div class="panel panel-internet">
+          <div class="panel-heading">
+            Websites
+            </div>
+            <div class="panel-body"> content
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Row -->
+  </div> <!-- Panels - Data -->
+
 </div> <!-- Container -->
   <!-- Load scripts at the end otherwise the page will appear to load slower
         This is because it will load the script before the content-->

@@ -1,3 +1,40 @@
+.jumbotron{
+  color: #fff;
+  background-color: #464646;
+}
+
+.jumbotron button{
+  color: black;
+}
+
+#dataTransmission button{
+  border: 0;
+  background-color: #f39c12;
+}
+
+#internet button{
+  border: 0;
+  background-color: #3498db;
+}
+
 .panel-col{
     display:none;
+}
+
+.panel-data{
+  border-color: #f39c12;
+
+}
+.panel-data > .panel-heading{
+  color: #fff;
+  background-color: #f39c12;
+}
+
+.panel-internet{
+  border-color: #3498db;
+
+}
+.panel-internet > .panel-heading{
+  color: #fff;
+  background-color: #3498db;
 }

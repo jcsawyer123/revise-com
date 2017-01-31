@@ -1,4 +1,4 @@
-
+// Data Transmission
 $('#b-con').on('click', function() {
   $('#con').fadeToggle(200);
 });
@@ -23,20 +23,19 @@ $('#b-networks').on('click', function() {
   $('#networks').fadeToggle(200);
 });
 
-// Mouseover events
-
-$('#btn5').on('mouseover', function() {
-  $('#panel5').fadeToggle(200);
+// The Internet
+$('#b-uses').on('click', function() {
+  $('#uses').fadeToggle(200);
 });
 
-$('#btn6').on('mouseover', function() {
-  $('#panel6').fadeToggle(200);
+$('#b-history').on('click', function() {
+  $('#history').fadeToggle(200);
 });
 
-$('#btn7').on('mouseover', function() {
-  $('#panel7').fadeToggle(200);
+$('#b-web').on('click', function() {
+  $('#web').fadeToggle(200);
 });
 
-$('#btn8').on('mouseover', function() {
-  $('#panel8').fadeToggle(200);
+$('#b-websites').on('click', function() {
+  $('#websites').fadeToggle(200);
 });
