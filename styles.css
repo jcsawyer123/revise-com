@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, button{
   margin-right: 3px;
 }
 
+button{
+  padding:10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 #title, #help{
   /*padding: 0;*/
 }
