@@ -98,6 +98,11 @@ h1, h2, h3, h4, h5, button{
 
 .panel{
   margin: 10px;
+  border-radius: 0;
+}
+
+.panel, .panel-heading, .panel-body{
+  border-radius: 0;
 }
 .panel-col{
   display:none;
