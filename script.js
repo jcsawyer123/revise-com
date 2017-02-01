@@ -65,6 +65,7 @@ $('#b-websites').on('click', function() {
 // Click To Close
 
 $('.cpanels').on('click', function() {
-  var panelId = $(this).attr('id')
+  var panelId = $(this).attr('id');
+  $('#b-'+panelId).toggleClass('active');
   $('#'+panelId).fadeToggle(200);
 });
