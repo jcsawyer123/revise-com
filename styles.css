@@ -3,7 +3,7 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, button{
   font-weight: bold;
 }
 
@@ -12,11 +12,13 @@ h1, h2, h3, h4, h5{
 }
 
 .jumbotron{
-  padding: 0px 0px 20px 0px;
   color: #ecf0f1;
   background-color: #2c3e50;
+  padding-top: 0px;
   padding-left:20px;
   padding-right:20px;
+  padding-bottom:10px;
+  margin-bottom: 0;
 }
 
 .jumbotron button{
@@ -25,12 +27,15 @@ h1, h2, h3, h4, h5{
   margin-right: 3px;
 }
 
-#data{
-  /*background-color: #fce2ba;*/
-  margin-bottom: 10px;
+#title, #help{
+  /*padding: 0;*/
 }
+/*-----------------------------
+      Buttons & Headers
+-----------------------------*/
 
-#dataTransmission{
+/*General*/
+#dataTransmission, #internet, #compSci{
   padding-bottom: 10px;
   border-left: 0;
   border-right: 0;
@@ -38,6 +43,8 @@ h1, h2, h3, h4, h5{
   border-bottom: #34495e 4px;
   border-style: solid;
 }
+
+/*Data Transmission - Buttons*/
 #dataTransmission button{
   border: 0;
   background-color: #f39c12;
@@ -47,20 +54,7 @@ h1, h2, h3, h4, h5{
   background-color: #f9cb82;
 }
 
-#inter{
-  /*background-color: #cae4f6;*/
-
-}
-
-#internet{
-  padding-bottom: 10px;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: #34495e 4px;
-  border-style: solid;
-}
-
+/*Internet - Buttons*/
 #internet button{
   border: 0;
   background-color: #3498db;
@@ -71,15 +65,7 @@ h1, h2, h3, h4, h5{
   background-color: #98cbed;
 }
 
-#compSci{
-  padding-bottom: 10px;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: #34495e 4px;
-  border-style: solid;
-}
-
+/*Computer Science - Buttons*/
 #compSci button{
   border: 0;
   background-color: #9b59b6;
@@ -90,6 +76,22 @@ h1, h2, h3, h4, h5{
   background-color: #d3a6e6;
 }
 
+/*Computer Science - Buttons*/
+#misc button{
+  border: 0;
+  background-color: #c0392b;
+}
+
+#misc button.active{
+  border: 0;
+  background-color: #C6847D;
+}
+
+/*----------------------
+        Panels
+----------------------*/
+
+/*General Panels*/
 .row{
   margin: 0px;
 }
@@ -98,9 +100,10 @@ h1, h2, h3, h4, h5{
   margin: 10px;
 }
 .panel-col{
-    display:none;
+  display:none;
 }
 
+/*Data Transmission - Panels*/
 .panel-data{
   border-color: #f39c12;
 
@@ -114,8 +117,7 @@ h1, h2, h3, h4, h5{
   background-color: #fce3bc;
 }
 
-/**/
-
+/*Internet - Panels*/
 .panel-internet{
   border-color: #3498db;
 
@@ -129,8 +131,7 @@ h1, h2, h3, h4, h5{
   background-color: #cce5f6;
 }
 
-/**/
-
+/*Computer Science - Panels*/
 .panel-comp{
   border-color: #9b59b6;
 
@@ -142,4 +143,21 @@ h1, h2, h3, h4, h5{
 
 .panel-comp > .panel-body{
   background-color: #dab6e8;
+}
+
+/*Internet - Panels*/
+.panel-misc{
+  color: black;
+  margin: 0;
+  margin-top: 20px;
+  border-color: #c0392b;
+
+}
+.panel-misc > .panel-heading{
+  color: black;
+  background-color: #c0392b;
+}
+
+.panel-misc > .panel-body{
+  background-color: #C6847D;
 }

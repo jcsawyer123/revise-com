@@ -15,22 +15,62 @@
 </head>
 <body>
 
-  <div class="jumbotron header">
-    <div id="title">
-      <h1>Computing Revision</h1>
-    </div>
-  </div>
+  <div class="header">
+
+    <div class="panels" id="misc">
+      <div class="row">
+
+        <div class="col-sm-6 col-xs-12 jumbotron" id="title">
+          <h1>Computing Revision</h1>
+          <div class="btns" id="misc">
+            <button data-buttonId="help" id="b-help">Help</button>
+            <button data-buttonId="info" id="b-info">Information</button>
+          </div> <!-- Btns -->
+        </div>
+
+        <div class="col-sm-3 col-xs-6 panel-col cpanels" id="help">
+          <div class="panel panel-misc">
+            <div class="panel-heading">
+            <h5>Help</h5>
+            </div> <!-- Panel Heading -->
+            <div class="panel-body">
+              <h5>Navigation</h5><p>To open a topic click on the respective button, when you are done with it you can close it two ways</p>
+              <ul>
+                <li>Clicking the button again</li>
+                <li>Clicking the top of the panel</li>
+              </ul>
+            </div> <!-- Panel-Body -->
+          </div> <!-- Panel Misc -->
+        </div> <!-- Help -->
+
+        <div class="col-sm-3 col-xs-6 panel-col cpanels" id="info">
+          <div class="panel panel-misc">
+            <div class="panel-heading">
+            <h5>Information</h5>
+            </div> <!-- Panel Heading -->
+            <div class="panel-body">
+              <p>Made by Joshua Sawyer</p>
+              <p>Created for A Level Computer Science Revision.</p>
+            </div> <!-- Panel-Body -->
+          </div> <!-- Panel Misc -->
+        </div> <!-- Help -->
+
+      </div> <!-- Row -->
+    </div> <!-- Panels -->
+
+
+</div> <!-- Jumbo -->
 
 <div class="dataTransmission">
   <div class="jumbotron dt"> <!-- Data Transmission Buttons -->
     <div class="btns" id="dataTransmission">
       <h2>Data Transmission</h2>
-      <button id="b-con">Characteristics</button>
-      <button id="b-hardware">Hardware</button>
-      <button id="b-topology">Topology</button>
-      <button id="b-protocols">Protocols</button>
-      <button id="b-extent">Extent</button>
-      <button id="b-networks">Networks</button>
+      <button data-buttonId="con" id="b-con">Characteristics</button>
+      <button data-buttonId="hardware" id="b-hardware">Hardware</button>
+      <button data-buttonId="topology" id="b-topology">Topology</button>
+      <button data-buttonId="protocols" id="b-protocols">Protocols</button>
+      <button data-buttonId="extent" id="b-extent">Extent</button>
+      <button data-buttonId="networks" id="b-networks">Networks</button>
     </div>
   </div>
   <div class="panels" id="data">
@@ -39,7 +79,7 @@
       <div class="col-xs-4 panel-col cpanels" id="con">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Characteristics of Networks
+            <h5>Characteristics of Networks</h5>
             </div>
             <div class="panel-body">
 
@@ -65,7 +105,7 @@
       <div class="col-xs-4 panel-col cpanels" id="hardware">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Hardware
+            <h5>Hardware</h5>
             </div>
             <div class="panel-body">
 
@@ -83,7 +123,7 @@
       <div class="col-xs-4 panel-col cpanels" id="topology">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Topology
+            <h5>Topology</h5>
             </div>
             <div class="panel-body">
 
@@ -104,7 +144,7 @@
       <div class="col-xs-4 panel-col cpanels" id="protocols">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Protocols
+            <h5>Protocols</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -114,7 +154,7 @@
       <div class="col-xs-4 panel-col cpanels" id="extent">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Extent
+            <h5>Extent</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -124,7 +164,7 @@
       <div class="col-xs-4 panel-col cpanels" id="networks">
         <div class="panel panel-data">
           <div class="panel-heading">
-            Networks
+            <h5>Networks</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -140,10 +180,10 @@
   <div class="jumbotron in"> <!-- Internet Buttons -->
     <div class="btns" id="internet">
       <h2>The Internet</h2>
-      <button id="b-uses">Uses</button>
-      <button id="b-history">History</button>
-      <button id="b-web">The Web</button>
-      <button id="b-websites">Websites</button>
+      <button data-buttonId="uses" id="b-uses">Uses</button>
+      <button data-buttonId="history" id="b-history">History</button>
+      <button data-buttonId="web" id="b-web">The Web</button>
+      <button data-buttonId="websites" id="b-websites">Websites</button>
     </div>
   </div>
 
@@ -153,7 +193,7 @@
       <div class="col-xs-4 panel-col cpanels" id="uses">
         <div class="panel panel-internet">
           <div class="panel-heading">
-            Uses
+            <h5>Uses</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -163,7 +203,7 @@
       <div class="col-xs-4 panel-col cpanels" id="history">
         <div class="panel panel-internet">
           <div class="panel-heading">
-            History
+            <h5>History</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -173,7 +213,7 @@
       <div class="col-xs-4 panel-col cpanels" id="web">
         <div class="panel panel-internet">
           <div class="panel-heading">
-            The Web
+            <h5>The Web</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -183,7 +223,7 @@
       <div class="col-xs-4 panel-col cpanels" id="websites">
         <div class="panel panel-internet">
           <div class="panel-heading">
-            Websites
+            <h5>Websites</h5>
             </div>
             <div class="panel-body"> content
           </div>
@@ -194,30 +234,41 @@
   </div> <!-- Panels - Data -->
 </div> <!-- The Internet -->
 
-<!-- TComputerSystems -->
+<!-- ComputerSystems -->
 <div class="computerSystems">
-<div class="jumbotron cs"> <!-- Computer Systems -->
-  <div class="btns" id="compSci">
-    <h2>Computer Systems</h2>
-    <button id="b-lmc">LMC</button>
+  <div class="jumbotron cs"> <!-- Computer Systems -->
+    <div class="btns" id="compSci">
+      <h2>Computer Systems</h2>
+      <button data-buttonId="lmc" id="b-lmc">LMC</button>
+      <button data-buttonId="empty" id="b-empty">empty</button>
+    </div>
   </div>
-</div>
 
-<div class="panels" id="comp">
-  <div class="row">
+  <div class="panels" id="comp">
+    <div class="row">
 
-    <div class="col-xs-4 panel-col cpanels" id="lmc">
-      <div class="panel panel-comp">
-        <div class="panel-heading">
-          LMC
+      <div class="col-xs-4 panel-col cpanels" id="lmc">
+        <div class="panel panel-comp">
+          <div class="panel-heading">
+            <h5>LMC</h5>
+            </div>
+            <div class="panel-body"> content
           </div>
-          <div class="panel-body"> content
         </div>
       </div>
-    </div>
 
-  </div> <!-- Row -->
-</div> <!-- Panels - Data -->
+      <div class="col-xs-4 panel-col cpanels" id="empty">
+        <div class="panel panel-comp">
+          <div class="panel-heading">
+            <h5>EMPTY</h5>
+            </div>
+            <div class="panel-body"> content
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Row -->
+  </div> <!-- Panels - Data -->
 </div> <!-- Computer Systems -->
 
   <!-- Load scripts at the end otherwise the page will appear to load slower
