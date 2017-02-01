@@ -1,4 +1,6 @@
 // Data Transmission
+// The Code is highly inefficient. It is not DRY because I didnt have time.
+
 $('#b-con').on('click', function() {
   var id = $(this).attr('id');
   $('#'+ id).toggleClass('active');
@@ -58,4 +60,11 @@ $('#b-websites').on('click', function() {
   var id = $(this).attr('id');
   $('#'+ id).toggleClass('active');
   $('#websites').fadeToggle(200);
+});
+
+// Click To Close
+
+$('.cpanels').on('click', function() {
+  var panelId = $(this).attr('id')
+  $('#'+panelId).fadeToggle(200);
 });
