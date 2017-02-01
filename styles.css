@@ -1,5 +1,7 @@
 body{
   background-color: #2c3e50;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5{
   font-weight: bold;
@@ -69,6 +71,29 @@ h1, h2, h3, h4, h5{
   background-color: #98cbed;
 }
 
+#compSci{
+  padding-bottom: 10px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: #34495e 4px;
+  border-style: solid;
+}
+
+#compSci button{
+  border: 0;
+  background-color: #9b59b6;
+}
+
+#compSci button.active{
+  border: 0;
+  background-color: #d3a6e6;
+}
+
+.row{
+  margin: 0px;
+}
+
 .panel{
   margin: 10px;
 }
@@ -89,6 +114,8 @@ h1, h2, h3, h4, h5{
   background-color: #fce3bc;
 }
 
+/**/
+
 .panel-internet{
   border-color: #3498db;
 
@@ -100,4 +127,19 @@ h1, h2, h3, h4, h5{
 
 .panel-internet > .panel-body{
   background-color: #cce5f6;
+}
+
+/**/
+
+.panel-comp{
+  border-color: #9b59b6;
+
+}
+.panel-comp > .panel-heading{
+  color: black;
+  background-color: #9b59b6;
+}
+
+.panel-comp > .panel-body{
+  background-color: #dab6e8;
 }

@@ -14,12 +14,15 @@
   <title>Revision</title>
 </head>
 <body>
-  
 
-  <div class="jumbotron">
+  <div class="jumbotron header">
     <div id="title">
       <h1>Computing Revision</h1>
     </div>
+  </div>
+
+<div class="dataTransmission">
+  <div class="jumbotron dt"> <!-- Data Transmission Buttons -->
     <div class="btns" id="dataTransmission">
       <h2>Data Transmission</h2>
       <button id="b-con">Characteristics</button>
@@ -29,20 +32,7 @@
       <button id="b-extent">Extent</button>
       <button id="b-networks">Networks</button>
     </div>
-    <div class="btns" id="internet">
-      <h2>The Internet</h2>
-      <button id="b-uses">Uses</button>
-      <button id="b-history">History</button>
-      <button id="b-web">The Web</button>
-      <button id="b-websites">Websites</button>
-    </div>
   </div>
-
-  <div class="container">
-
-  <!-- These are panels that are using bootstrap#
-If you dont know what that is look at the previous
-examples in HTML,CSS,JS-->
   <div class="panels" id="data">
     <div class="row">
 
@@ -143,8 +133,19 @@ examples in HTML,CSS,JS-->
 
     </div> <!-- Row -->
   </div> <!-- Panels - Data -->
+</div> <!-- Data Transmission -->
 
   <!-- The Internet -->
+<div class="theInternet">
+  <div class="jumbotron in"> <!-- Internet Buttons -->
+    <div class="btns" id="internet">
+      <h2>The Internet</h2>
+      <button id="b-uses">Uses</button>
+      <button id="b-history">History</button>
+      <button id="b-web">The Web</button>
+      <button id="b-websites">Websites</button>
+    </div>
+  </div>
 
   <div class="panels" id="inter">
     <div class="row">
@@ -191,8 +192,34 @@ examples in HTML,CSS,JS-->
 
     </div> <!-- Row -->
   </div> <!-- Panels - Data -->
+</div> <!-- The Internet -->
 
-</div> <!-- Container -->
+<!-- TComputerSystems -->
+<div class="computerSystems">
+<div class="jumbotron cs"> <!-- Computer Systems -->
+  <div class="btns" id="compSci">
+    <h2>Computer Systems</h2>
+    <button id="b-lmc">LMC</button>
+  </div>
+</div>
+
+<div class="panels" id="comp">
+  <div class="row">
+
+    <div class="col-xs-4 panel-col cpanels" id="lmc">
+      <div class="panel panel-comp">
+        <div class="panel-heading">
+          LMC
+          </div>
+          <div class="panel-body"> content
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Row -->
+</div> <!-- Panels - Data -->
+</div> <!-- Computer Systems -->
+
   <!-- Load scripts at the end otherwise the page will appear to load slower
         This is because it will load the script before the content-->
   <!-- jQuery library -->

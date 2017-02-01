@@ -62,6 +62,12 @@ $('#b-websites').on('click', function() {
   $('#websites').fadeToggle(200);
 });
 
+$('#b-lmc').on('click', function() {
+  var id = $(this).attr('id');
+  $('#'+ id).toggleClass('active');
+  $('#lmc').fadeToggle(200);
+});
+
 // Click To Close
 
 $('.cpanels').on('click', function() {
